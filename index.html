@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/casa.png" type="image/x-icon">
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,700;1,100;1,200;1,300;1,400&display=swap"
+        rel="stylesheet">
+
+        <template id="my-template">
+            <swal-button type="confirm" >
+                akaka
+              </swal-button>
+        </template>
+</head>
+
+<body>
+    <div class="principal-div">
+        <h1>Welcome</h1>
+
+        <form id="login-form">
+            <div class="form-group">
+                <input type="text" id="usuario" name="usuario" placeholder="Usuário" required>
+            </div>
+
+            <div class="form-group">
+                <input type="password" id="senha" name="senha" placeholder="Senha" required>
+            </div>
+
+            <button class="submit-button" type="submit">ENTRAR</button>
+        </form>
+
+        <div class="signup-link">
+            <p>Não tem cadastro? <a href="#" class="signup">Inscrever-se</a></p>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

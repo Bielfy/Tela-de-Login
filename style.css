@@ -1,0 +1,106 @@
+:root {
+    --cor-azul: rgba(98, 202, 248);
+    --cor-branco: rgb(255, 255, 255);
+    --cor-background: rgb(242, 242, 242);
+    --cor-preto: rgb(0, 0, 0);
+    --cor-gradient-azul: rgb(0, 219, 222);
+    --cor-gradient-rosa: rgb(252, 0, 255);
+    --cor-textos-cinza: rgb(74, 74, 74);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: barlow;
+    font-weight: 400;
+    color: var(--cor-textos-cinza);
+}
+
+body {
+    background-color: var(--cor-background);
+}
+
+.principal-div {
+    padding: 55px 55px 33px;
+    width: 290px;
+    height: 500px;
+    background-color: var(--cor-branco);
+    border-radius: 10px;
+    text-align: center;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adicione uma sombra */
+}
+
+.principal-div:hover {
+    box-shadow: 0 0 10px rgba(98, 203, 248, 0.753); /* Adicione uma sombra */
+}
+
+h1 {
+    top: 40%;
+    font-weight: 700;
+    font-size: 35px;
+    margin-bottom: 40px;
+}
+
+input {
+    font-weight: 400;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 60px;
+    border: none;
+    outline: 0;
+    border-bottom: 1px solid var(--cor-azul);
+    padding-bottom: 5px;
+    padding-left: 5px;
+    width: 100%;
+}
+
+#senha {
+    margin-top: 20px;
+    margin-bottom: 60px;
+}
+
+input::placeholder {
+    color: var(--cor-azul);
+    font-weight: 400;
+} 
+
+.submit-button {
+    cursor: pointer;
+    color: var(--cor-branco);
+    background: -webkit-linear-gradient(right, var(--cor-gradient-azul), var(--cor-gradient-rosa),var(--cor-gradient-azul), var(--cor-gradient-rosa));
+    font-size: 15px;
+    font-weight: 700;
+    margin-top: 20px;
+    height: 50px;
+    width: 100%;
+    border: solid var(--cor-branco) 1px;
+    border-radius: 5px;
+    transition: transform 0.2s, background-position 0.8s; /* Adicione a transição para a posição do fundo */
+    background-size: 250% auto; /* Adicione o tamanho inicial do fundo */
+    -webkit-transition: all .4s;
+}
+
+.submit-button:hover {
+    transform: scale(1.1);
+    background-position: right center; /* Adicione a nova posição do fundo */
+}
+
+.signup-link {
+    margin-top: 90px;
+    display: flex;
+    justify-content: center;
+}
+
+.signup {
+    font-weight: 300;
+    display: inline-block;
+    position: relative;
+    text-decoration: var(--cor-preto);
+    color: var(--cor-preto);
+    cursor:pointer;
+}
